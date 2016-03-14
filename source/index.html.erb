@@ -71,8 +71,11 @@
                 <h2>Romain's home</h2>
                 <p>Nice flat in Piccadilly</p>
               </div>
-              <img class="card-user avatar avatar-large" src="images/romain.jpeg">
+
               <a class="card-link" href="#" ></a>
+              <% link_to "#", class: "card-user avatar avatar-large" do %>
+                <%= image_tag "images/romain.jpeg", class: "card-link" %>
+              <% end %>
             </div>
           </div>
         </div>
